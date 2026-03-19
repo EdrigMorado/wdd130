@@ -11,6 +11,12 @@
     --space-base: 1rem;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 nav {
     background-color: var(--primary-color);
     padding: var(--space-sm);
@@ -24,18 +30,21 @@ nav a {
 
 h1 {
     color: var(--primary-color);
+    padding: 1rem;
 }
 
 main img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border: 1px solid var(--border-color);
     padding: 2px;
     box-shadow: 0 0 30px var(--shadow-color);
+    float: right;
+    margin: 2rem 0 1rem 1rem;
 }
 
 p {
-    padding: 0px;
+    padding: 1rem;
 }
 
 main {
@@ -44,21 +53,38 @@ main {
 
 aside {
     width: 20rem;
-    margin: var(--space-base);
-    border: 1px solid var(--border-color); /* rgb(0, 0, 0); 1*/
-    padding: var(--space-base);
-    background-color: var(--aside-bg);
-    color: var(--aside-text);
     text-align: center;
+    position: relative;
 }
 
 aside img {
-    width: 200px;
+    width: 290px;
     height: auto;
+}
+
+aside h2{
+    position: absolute;
+    top: 16px;
+    left: 53px;
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid var(--border-color);
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+  margin: 1rem;
+  margin: 1rem;
+  border: 1px solid rgb(0, 0, 0); /*1*/
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+}
+
+.indent {
+    padding-left: 2rem;
 }
