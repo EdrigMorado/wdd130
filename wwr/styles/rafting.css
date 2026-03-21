@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #2a4d69;
+    --secondary-color: #4b86b4;
+    --accent1-color: #adcbe3;
+    --accent2-color: #e7eff6;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+    --text-dark: #222222;
+    --text-light: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-dark);
+    background-color: var(--accent2-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--accent1-color);
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    margin: 16px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.85;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(231, 239, 246, 0.9);
+    color: var(--text-dark);
+    border: 1px solid var(--secondary-color);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 16px;
+    border: 2px solid var(--secondary-color);
+}
+
+section {
+    background-color: var(--text-light);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent1-color);
+    margin-top: 20px;
+    padding: 8px 16px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+}
